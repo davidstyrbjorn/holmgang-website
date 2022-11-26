@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.canvas {
+    position: absolute !important;
+}
+
+@font-face {
+    font-family: "NordicaBlack";
+    src: url("../fonts/NordicaBlack.otf");
+}
+
+@font-face {
+    font-family: "NordicaHairline";
+    src: url("../fonts/NoridcaHarline.otf");
+}
+
+@font-face {
+    font-family: "NordicaRegular";
+    src: url("../fonts/NordicaRegular.otf");
+}
+
+@font-face {
+    font-family: "NordicaThin";
+    src: url("../fonts/NordicaThin.otf");
+}
+
+@font-face {
+    font-family: "RunyTunes";
+    src: url("../fonts/RunyTunes.otf");
+}
+
+h2 {
+    font-family: "NordicaRegular";
+    font-size: 80px;
+}
+
+h3 {
+    font-family: "NordicaRegular";
+    font-size: 60px;
+}
+
+h4 {
+    font-family: "NordicaRegular";
+    font-size: 50px;
+}
+
+h5 {
+    font-family: "NordicaRegular";
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 24px;
+    font-family: "NordicaRegular";
+}
+
+@keyframes reduceLetterSpacing {
+    0% {
+      letter-spacing: 6rem;
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        letter-spacing: 0rem;
+    }
+  }
+  
+  .title-text {  
+        animation: 5s ease-out 0s 1 reduceLetterSpacing;
+  }
