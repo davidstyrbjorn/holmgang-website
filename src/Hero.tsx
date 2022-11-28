@@ -30,11 +30,10 @@ const Hero: React.FunctionComponent = (props: Props) => {
     }, [muted]);
 
     return (
-        <div className="w-screen max-w-full flex flex-col custom-hero-height bg-holmgang-green -z-10 ">
-            <div className="min-w-full min-h-full absolute  -z-10"></div>
+        <div className="w-screen max-w-full flex flex-col bg-holmgang-green ">
             <MuteButton muted={muted} setMuted={setMuted} />
-            <div className="m-auto pb-32 relative">
-                <h1 className="text-holmgang-beige text-center font-nordicathin text-3xl pt-8">
+            <div className="m-auto relative">
+                <h1 className="text-holmgang-beige text-center font-nordicathin text-xl pt-8">
                     StoneTech Presents
                 </h1>
                 <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text">

@@ -46,7 +46,6 @@ h4 {
 p {
     font-size: 24px;
     font-family: "NordicaThin";
-    letter-spacing:0.1rem;
 }
 
 @keyframes reduceLetterSpacing {
@@ -110,3 +109,18 @@ p {
   }
 
   /* #141308  */
+
+  @media (max-width: 800px) {
+    h4 {
+      font-family: 'NordicaThin';
+      font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+        font-family: "NordicaThin";
+    }
+
+    .custom-dev-width{
+        flex: 0 0 100%;
+    }
+  }

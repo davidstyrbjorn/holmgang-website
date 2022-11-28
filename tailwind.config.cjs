@@ -27,6 +27,9 @@ module.exports = {
       maxWidth: {
         'desktop':'1920px'
       },
+      minWidth: {
+        '36':'36rem'
+      },
       fontFamily: {
         nordicablack: ['NordicaBlack'],
         nordicaharline: ['NordicaHarline'],
@@ -35,7 +38,7 @@ module.exports = {
         runytunes: ['RunyTunes']
       },
       fontSize: {
-        'title': '20vw'
+        'title': '26vw'
       },
       backgroundImage: {
         'screenshot1': "url('./src/assets/holmgang1')",

@@ -11,7 +11,7 @@ const About: React.FunctionComponent = (props: Props) => {
     let devs: Developer[] = developers as Developer[];
 
     return (
-        <div className="pt-8 w-full flex flex-col">
+        <div className="pt-8 w-full">
             <div className="flex flex-col justify-center p-8">
                 <h2 className="">About the devs</h2>
                 <p className="">
@@ -23,11 +23,11 @@ const About: React.FunctionComponent = (props: Props) => {
                     suscipit lectus pharetra. Vivamus tincidunt, turpis eu
                 </p>
             </div>
-            <div className="flex justify-center min-w-96">
+            <div className="flex justify-center flex-row flex-wrap min-w-fit w-full">
                 <Dev dev={devs[0]} />
                 <Dev dev={devs[1]} />
             </div>
-            <div className="flex  justify-center min-w-96">
+            <div className="flex  justify-center flex-wrap">
                 <Dev dev={devs[1]} />
                 <Dev dev={devs[1]} />
             </div>
