@@ -1,10 +1,15 @@
 import React from "react";
-import Dev from "./Dev"
+import Dev from "./Dev";
 // Using tailwindcss
+
+import developers from "../developers.json";
+import { Developer } from "../types";
 
 type Props = {};
 
 const About: React.FunctionComponent = (props: Props) => {
+    let devs: Developer[] = developers as Developer[];
+
     return (
         <div className="pt-8 w-full flex flex-col">
             <div className="flex flex-col justify-center p-8">
@@ -19,12 +24,12 @@ const About: React.FunctionComponent = (props: Props) => {
                 </p>
             </div>
             <div className="flex justify-center min-w-96">
-                <Dev/>
-                <Dev/>
+                <Dev dev={devs[0]} />
+                <Dev dev={devs[1]} />
             </div>
             <div className="flex  justify-center min-w-96">
-                <Dev/>
-                <Dev/>
+                <Dev dev={devs[1]} />
+                <Dev dev={devs[1]} />
             </div>
         </div>
     );

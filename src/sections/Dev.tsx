@@ -1,23 +1,17 @@
 import React from "react";
-// Using tailwindcss
+import { Developer } from "../types";
 
 type Props = {
-    
+    dev: Developer;
 };
 
-const Dev: React.FunctionComponent = (props: Props) => {
+const Dev: React.FunctionComponent<Props> = (props: Props) => {
     return (
         <div className="pt-8 flex flex-col">
             <div className="flex flex-col justify-center p-8">
-                <h3>Emil Bertholdsson</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    condimentum lectus a lacus aliquam rutrum. Maecenas placerat
-                    interdum iaculis. Etiam vel arcu volutpat quam dignissim
-                    varius. Aliquam eu aliquam massa. Etiam imperdiet efficitur
-                    tempor. Donec pharetra urna cursus purus bibendum, at
-                    suscipit lectus pharetra. Vivamus tincidunt, turpis eu
-                </p>
+                <h3>{props.dev.name}</h3>
+                <h4>{props.dev.title}</h4>
+                <p>{props.dev.description}</p>
             </div>
         </div>
     );
