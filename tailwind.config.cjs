@@ -19,29 +19,36 @@ module.exports = {
         'holmgang-beige': '#F4F2DB',
         'holmgang-dark': '#141308',
         'holmgang-green': '#28250F',
+      },
+      
+      width: {
+        '12/25':'48%'
+      },
+      maxWidth: {
+        'desktop':'1920px'
+      },
+      fontFamily: {
+        nordicablack: ['NordicaBlack'],
+        nordicaharline: ['NordicaHarline'],
+        nordicaregular: ['NordicaRegular'],
+        nordicathin: ['NordicaThin'],
+        runytunes: ['RunyTunes']
+      },
+      fontSize: {
+        'title': '20vw'
+      },
+      backgroundImage: {
+        'screenshot1': "url('./src/assets/holmgang1')",
+        'screenshot2': "url('./src/assets/holmgang2')",
+        'screenshot3': "url('./src/assets/holmgang3')",
+        'screenshot4': "url('./src/assets/holmgang4')",
+      },
+      spacing: {
+        '90vh': '90vh',
+        '2full': '200%',
       }
     },
-   
-    width: {
-      '12/25':'48%'
-    },
-    fontFamily: {
-      nordicablack: ['NordicaBlack'],
-      nordicaharline: ['NordicaHarline'],
-      nordicaregular: ['NordicaRegular'],
-      nordicathin: ['NordicaThin'],
-      runytunes: ['RunyTunes']
-    },
-    fontSize: {
-      'title': '20vw'
-    },
-    backgroundImage: {
-      'screenshot1': "url('./src/assets/holmgang1')",
-      'screenshot2': "url('./src/assets/holmgang2')",
-      'screenshot3': "url('./src/assets/holmgang3')",
-      'screenshot4': "url('./src/assets/holmgang4')",
-      
-     }
+    plugins: [],
   },
-  plugins: [],
-}
+
+  }

@@ -30,26 +30,11 @@ const Hero: React.FunctionComponent = (props: Props) => {
     }, [muted]);
 
     return (
-        <div className="w-screen max-w-full h-screen bg-holmgang-green flex flex-col">
-            <Canvas camera={{ position: [0, 0, 6] }} className="canvas">
-                {/* <pointLight position={[0, 0, 0]} /> */}
-                <ambientLight />
-                <Suspense fallback={null}>
-                    <Cloud position={[-8, -8, -25]} speed={0.2} opacity={0.2} />
-                    <Cloud position={[8, -8, -15]} speed={-0.2} opacity={0.2} />
-                    <Cloud
-                        position={[0, -12, -15]}
-                        speed={-0.2}
-                        opacity={0.2}
-                    />
-                    <Cloud position={[-8, -8, -10]} speed={0.2} opacity={0.1} />
-                    <Cloud position={[8, -8, -5]} speed={-0.2} opacity={0.2} />
-                    <Cloud position={[-8, -8, 0]} speed={0.2} opacity={0.2} />
-                </Suspense>
-            </Canvas>
+        <div className="w-screen max-w-full flex flex-col custom-hero-height bg-holmgang-green -z-10 ">
+            <div className="min-w-full min-h-full absolute  -z-10"></div>
             <MuteButton muted={muted} setMuted={setMuted} />
             <div className="m-auto pb-32 relative">
-                <h1 className="text-holmgang-beige text-center font-nordicathin text-3xl">
+                <h1 className="text-holmgang-beige text-center font-nordicathin text-3xl pt-8">
                     StoneTech Presents
                 </h1>
                 <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text">
@@ -61,3 +46,20 @@ const Hero: React.FunctionComponent = (props: Props) => {
 };
 
 export default Hero;
+
+{/* <Canvas camera={{ position: [0, 0, 6] }} className="canvas -z-10">
+    
+    <ambientLight />
+    <Suspense fallback={null}>
+        <Cloud position={[-8, -8, -25]} speed={0.2} opacity={0.2} />
+        <Cloud position={[8, -8, -15]} speed={-0.2} opacity={0.2} />
+        <Cloud
+            position={[0, -12, -15]}
+            speed={-0.2}
+            opacity={0.2}
+        />
+        <Cloud position={[-8, -8, -10]} speed={0.2} opacity={0.1} />
+        <Cloud position={[8, -8, -5]} speed={-0.2} opacity={0.2} />
+        <Cloud position={[-8, -8, 0]} speed={0.2} opacity={0.2} />
+    </Suspense>
+</Canvas> */}
