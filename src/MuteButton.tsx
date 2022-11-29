@@ -12,7 +12,7 @@ const MuteButton = (props: Props) => {
 
     return (
         <div
-            className="fixed top-5 right-5 font-nordicablack text-holmgang-beige bg-black p-5 rounded-lg hover:bg-gray cursor-pointer"
+            className="fixed top-0 right-0 font-nordicablack text-holmgang-beige p-2 rounded-lg hover:text-gray cursor-pointer"
             onClick={handleMute}
         >
             {props.muted ? "UNMUTE" : "MUTE"}

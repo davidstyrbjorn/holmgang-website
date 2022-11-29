@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "holmgang-website"
-  }
+  },
+  "targets": {
+    "holmgang-website": {
+      "hosting": {
+        "blog": [
+          "holmgang-website"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

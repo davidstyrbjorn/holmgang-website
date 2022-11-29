@@ -67,7 +67,8 @@ p {
   }
 
   .custom-hero-height{
-    height: 60vw;
+    height: 100vh;
+    max-height: 70vw;
   }
 
   @keyframes slide {
