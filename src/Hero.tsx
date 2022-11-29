@@ -30,8 +30,8 @@ const Hero: React.FunctionComponent = (props: Props) => {
     }, [muted]);
 
     return (
-        <div className="w-screen max-w-full flex flex-col  custom-hero-height">
-            <div className="w-screen h-screen absolute bg-holmgang-green -z-20"></div>
+        <div className="w-screen max-w-full flex flex-col  custom-hero-height overflow-hidden">
+            <div className="w-full h-screen absolute bg-holmgang-green -z-20"></div>
             <MuteButton muted={muted} setMuted={setMuted} />
             <div className="m-auto relative w-full">
                 <div className=" w-full overflow-hidden">

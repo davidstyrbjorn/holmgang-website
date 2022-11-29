@@ -28,8 +28,8 @@ const About: React.FunctionComponent = (props: Props) => {
                 <Dev dev={devs[1]} />
             </div>
             <div className="flex  justify-center flex-wrap">
-                <Dev dev={devs[1]} />
-                <Dev dev={devs[1]} />
+                <Dev dev={devs[2]} />
+                <Dev dev={devs[2]} />
             </div>
         </div>
     );
