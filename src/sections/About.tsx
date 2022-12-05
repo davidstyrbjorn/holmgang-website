@@ -15,12 +15,14 @@ const About: React.FunctionComponent = (props: Props) => {
             <div className="flex flex-col justify-center p-8">
                 <h2 className="">About the devs</h2>
                 <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    condimentum lectus a lacus aliquam rutrum. Maecenas placerat
-                    interdum iaculis. Etiam vel arcu volutpat quam dignissim
-                    varius. Aliquam eu aliquam massa. Etiam imperdiet efficitur
-                    tempor. Donec pharetra urna cursus purus bibendum, at
-                    suscipit lectus pharetra. Vivamus tincidunt, turpis eu
+                    StoneTech is a team of friends that started developing games
+                    together during their studies at Linköping University. With
+                    a few smaller projects and gamejams under their belts they
+                    are excited to create a larger, more complete experience
+                    with Holmgang. The name StoneTech comes from an inside joke
+                    about a certain, very unique playstyle in Holmgang. Below
+                    you can find a small presentation for each individual
+                    StoneTech developer.
                 </p>
             </div>
             <div className="flex justify-center flex-row flex-wrap min-w-fit w-full">
@@ -29,7 +31,7 @@ const About: React.FunctionComponent = (props: Props) => {
             </div>
             <div className="flex  justify-center flex-wrap">
                 <Dev dev={devs[2]} />
-                <Dev dev={devs[2]} />
+                <Dev dev={devs[3]} />
             </div>
         </div>
     );

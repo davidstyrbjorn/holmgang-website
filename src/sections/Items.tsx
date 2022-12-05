@@ -1,5 +1,5 @@
 import React from "react";
-import itembar from "../assets/itembar.svg"
+import itembar from "../assets/itembar.svg";
 // Using tailwindcss
 
 type Props = {};
@@ -10,12 +10,14 @@ const Items: React.FunctionComponent = (props: Props) => {
             <div className="flex flex-col justify-center p-8">
                 <h2 className="">Items</h2>
                 <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    condimentum lectus a lacus aliquam rutrum. Maecenas placerat
-                    interdum iaculis. Etiam vel arcu volutpat quam dignissim
-                    varius. Aliquam eu aliquam massa. Etiam imperdiet efficitur
-                    tempor. Donec pharetra urna cursus purus bibendum, at
-                    suscipit lectus pharetra. Vivamus tincidunt, turpis eu
+                    During draft rounds, you and your friends will be presented
+                    with some gifts to change up the game. Each player gets to
+                    choose one unique artifact bestowed by Hel, Loki, Thor,
+                    Skadi or Odin to cater to their own fighting style. By being
+                    strategic with your choice and picking artifacts that
+                    synergize well, you can change the game in your favor. With
+                    50+ artifacts in the pool of possible artifacts, no match is
+                    the same in Holmgang.
                 </p>
             </div>
             {/* <div className="absolute w-full left-0 flex justify-center bg-holmgang-dark">
@@ -23,7 +25,6 @@ const Items: React.FunctionComponent = (props: Props) => {
             </div> */}
 
             <div className="flex justify-between">
-                
                 <div className="max-w-desktop overflow-hidden ">
                     <div className=" flex justify-center bg-holmgang-dark slide-container overflow-hidden">
                         <div className="h-96 sliding-bg overflow-hidden "></div>

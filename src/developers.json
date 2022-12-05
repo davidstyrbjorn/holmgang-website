@@ -1,21 +1,27 @@
 [
     {
-        "name": "David Styrbjörn",
+        "name": "David Styrbjorn",
         "title": "Code Architecture & Gameplay",
-        "description": "David is a fanatic when it comes to programming. Give him a problem and he will find a neat solution. He has a background in both web development, software development and gamedev and brings a strong foundation to the way new features are implemented into Holmgang.",
+        "description": "David is a fanatic when it comes to programming. Give him a problem and he will find a neat solution. He has a background in both web development, software development and gamedev and brings a strong foundation to the way new features are implemented into Holmgang. His favorite item is Poison Dagger",
         "link": "https://davidstyrbjorn.github.io"
     },
     {
         "name": "Linus Karlsson",
         "title": "Gameplay Programmer & Music Composer",
         "description": "With skills in programming and music production, and a burning passion for video games, Linus loves to create exciting experiences. As gameplay programmer and composer for Holmgang he has focused on creating something that is just as fun to play as it was to create. His favorite item is Might of Thunder.",
-        "link": "https://www.google.com"
+        "link": "https://linnet5.github.io/"
     },
     {
-        "name": "John Doe",
-        "title": "Lead Boaorm",
-        "description": "riktigt ormig",
-        "link": "https://www.google.com"
+        "name": "Max Benecke",
+        "title": "Gameplay Programmer & Design",
+        "description": "Max has always had a passion for designing new experiences. Part of being a designer is finding the small nuances that elevates a game from decent to great. Holmgang has been an incredibly exciting project for a game designer with so many moving components to create and curate. His favorite item is Buffet of Souls",
+        "link": "https://www.linkedin.com/in/max-benecke-21a757172/"
+    },
+    {
+        "name": "Emil Bertholdsson",
+        "title": "Gameplay Programmer & Visuals",
+        "description": "Emil has a keen eye and a user focused mind that he uses to produce graphics and smart design solutions for Holmgang. As the UI/UX Designer of the group he often spends his time making sure everything follows our cohesive style and is easy to interpret. His favorite item is Godly Aim.",
+        "link": "https://www.linkedin.com/in/emil-bertholdsson/"
     }
 ]
 

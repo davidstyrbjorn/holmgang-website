@@ -4,12 +4,65 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import { random } from "maath";
 import MuteButton from "./MuteButton";
 import bg from "./assets/bg.mp3";
+import muteAtom from "./atoms/mute";
+import { useAtom } from "jotai";
 
 type Props = {};
 
+const Clouds: React.FC = () => {
+    const [cloudOpacity, setCloudOpacity] = useState(0.0);
+    const timeTracker = useRef(0.0);
+
+    useFrame((_state, delta, _xrFrame) => {
+        if (timeTracker.current < 0.25) {
+            timeTracker.current += delta;
+            return;
+        }
+        if (cloudOpacity < 0.2) setCloudOpacity(cloudOpacity + 0.05 * delta);
+    });
+
+    return (
+        <>
+            <Cloud
+                position={[-20, -6, -25]}
+                speed={0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud
+                position={[8, -8, -15]}
+                speed={-0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud
+                position={[-8, -8, -25]}
+                speed={0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud
+                position={[20, -6, -15]}
+                speed={-0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud
+                position={[0, -12, -15]}
+                speed={-0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud
+                position={[-8, -8, -10]}
+                speed={0.2}
+                opacity={cloudOpacity}
+            />
+            <Cloud position={[8, -8, -5]} speed={-0.2} opacity={cloudOpacity} />
+            <Cloud position={[-8, -8, 0]} speed={0.2} opacity={cloudOpacity} />
+        </>
+    );
+};
+
 const Hero: React.FunctionComponent = (props: Props) => {
     const audio = useRef<HTMLAudioElement>();
-    const [muted, setMuted] = useState<boolean>(true);
+    // const [muted, setMuted] = useState<boolean>(true);
+    const [muted, setMuted] = useAtom(muteAtom);
 
     useEffect(() => {
         if (audio.current) return;
@@ -44,27 +97,17 @@ const Hero: React.FunctionComponent = (props: Props) => {
                 </div>
             </div>
 
-            <Canvas camera={{ position: [0, 0, 6] }} className="canvas custom-hero-height mt-8 -z-10">
+            <Canvas
+                camera={{ position: [0, 0, 6] }}
+                className="canvas custom-hero-height mt-8 -z-10"
+            >
                 <ambientLight />
                 <Suspense fallback={null}>
-                    <Cloud position={[-20, -6, -25]} speed={0.2} opacity={0.2} />
-                    <Cloud position={[8, -8, -15]} speed={-0.2} opacity={0.2} />
-                    <Cloud position={[-8, -8, -25]} speed={0.2} opacity={0.2} />
-                    <Cloud position={[20, -6, -15]} speed={-0.2} opacity={0.2} />
-                    <Cloud
-                        position={[0, -12, -15]}
-                        speed={-0.2}
-                        opacity={0.2}
-                    />
-                    <Cloud position={[-8, -8, -10]} speed={0.2} opacity={0.1} />
-                    <Cloud position={[8, -8, -5]} speed={-0.2} opacity={0.2} />
-                    <Cloud position={[-8, -8, 0]} speed={0.2} opacity={0.2} />
+                    <Clouds />
                 </Suspense>
             </Canvas>
-
         </div>
     );
 };
 
 export default Hero;
-
