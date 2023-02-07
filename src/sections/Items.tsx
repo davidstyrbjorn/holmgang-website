@@ -16,8 +16,8 @@ const Items: React.FunctionComponent = (props: Props) => {
                     Skadi or Odin to cater to their own fighting style. By being
                     strategic with your choice and picking artifacts that
                     synergize well, you can change the game in your favor. With
-                    50+ artifacts in the pool of possible artifacts, no match is
-                    the same in Holmgang.
+                    50+ artifacts in the pool of possible artifacts, no two
+                    matches are ever the same in Atganga.
                 </p>
             </div>
             {/* <div className="absolute w-full left-0 flex justify-center bg-holmgang-dark">

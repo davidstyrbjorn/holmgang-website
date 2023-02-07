@@ -14,7 +14,7 @@ const YoutubeVideo = (props: Props) => {
         <iframe
             className="w-full aspect-video shadow-2xl shadow-holmgang-green border-solid border-2 border-holmgang-green"
             src={props.video_id}
-            title="HOLMGANG - Teaser Screencast | TDDD23 project"
+            title="ATGANGA Gameplay"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             onClick={onPlayHandle}
         ></iframe>

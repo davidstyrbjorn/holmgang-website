@@ -6,6 +6,7 @@ import Items from "./sections/Items";
 import About from "./sections/About";
 import "./index.css";
 import GameplayTrailer from "./sections/GameplayTrailer";
+import ThePlan from "./sections/ThePlan";
 
 export function App() {
     return (
@@ -18,6 +19,7 @@ export function App() {
                     <Items />
                     <About />
                     <GameplayTrailer />
+                    <ThePlan />
                 </div>
             </div>
         </>

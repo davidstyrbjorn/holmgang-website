@@ -89,10 +89,10 @@ const Hero: React.FunctionComponent = (props: Props) => {
             <div className="m-auto relative w-full">
                 <div className=" w-full overflow-hidden">
                     <h1 className="text-holmgang-beige text-center font-nordicathin text-md w-full pt-8">
-                        StoneTech Presents
+                        StoneTech Games Presents
                     </h1>
                     <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
-                        HOLMGANG
+                        ATGANGA
                     </h1>
                 </div>
             </div>

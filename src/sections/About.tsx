@@ -1,4 +1,5 @@
 import React from "react";
+
 import Dev from "./Dev";
 // Using tailwindcss
 
@@ -15,14 +16,14 @@ const About: React.FunctionComponent = (props: Props) => {
             <div className="flex flex-col justify-center p-8">
                 <h2 className="">About the devs</h2>
                 <p className="">
-                    StoneTech is a team of friends that started developing games
-                    together during their studies at Linköping University. With
-                    a few smaller projects and gamejams under their belts they
-                    are excited to create a larger, more complete experience
-                    with Holmgang. The name StoneTech comes from an inside joke
-                    about a certain, very unique playstyle in Holmgang. Below
-                    you can find a small presentation for each individual
-                    StoneTech developer.
+                    StoneTech Games is a team of friends that started developing
+                    games together during their studies at Linköping University.
+                    With a few smaller projects and gamejams under their belts
+                    they are excited to create a larger, more complete
+                    experience with Holmgang. The name StoneTech Games comes
+                    from an inside joke about a certain, very unique playstyle
+                    in Holmgang. Below you can find a small presentation for
+                    each individual StoneTech Games developer.
                 </p>
             </div>
             <div className="flex justify-center flex-row flex-wrap min-w-fit w-full">

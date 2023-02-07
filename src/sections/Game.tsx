@@ -13,7 +13,7 @@ const Game: React.FunctionComponent = (props: Props) => {
             <div className="flex flex-col justify-center p-8">
                 <h2 className="">The Game</h2>
                 <p className="">
-                    Holmgang is a couch multiplayer game where you and you
+                    Atganga is a couch multiplayer game where you and you
                     friends fight to impress the norse gods. Master combat and
                     movement to become the last viking standing each round and
                     ensure your victory. However, the gods are not easily
