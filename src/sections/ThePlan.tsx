@@ -5,7 +5,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import YoutubeVideo from "../components/YoutubeVideo";
+import screenshot1 from "../assets/early.png";
+import esg from "../assets/esg.png";
+import lgc from "../assets/lgc.png";
+import future from "../assets/future.png";
 
 type Props = {};
 
@@ -13,13 +16,15 @@ type TimelineEntry = {
     date: string;
     title: string;
     text: string;
+    image?: string;
 };
 
 const timelineEntries: TimelineEntry[] = [
     {
         date: "August, 2022",
         title: "Development Began...",
-        text: "with the beggining of our next to last semester at LiU we all read the course TDDD23 where we decided to begin our adventure",
+        text: "with the beggining of our next to last semester at LiU we all read the course TDDD23 where we decided to begin our development",
+        image: screenshot1,
     },
     {
         date: "November 17, 2022",
@@ -28,6 +33,7 @@ const timelineEntries: TimelineEntry[] = [
             Placing 2nd overall at LiU game conference where we also presented at the exhibition with great feedback from all the attendees
             we finished 'phase 1' of development. With plans to continue development and lots of new contacts made 
         `,
+        image: lgc,
     },
     {
         date: "January, 2023",
@@ -37,6 +43,7 @@ const timelineEntries: TimelineEntry[] = [
             for the massive amounts of new features we want to add. 
             Working out from the offices at coffice provided by the ESG collective who we made contact with during 2022
         `,
+        image: esg,
     },
     {
         date: "February 2023 and ahead",
@@ -45,13 +52,15 @@ const timelineEntries: TimelineEntry[] = [
             Right now we are deep in the trenches designing new items, implementing new features, developing the best possible game to our abilities.
             We also want to start establish a following which will begin at Närcon Winter where we will be part of the indie game exhibition, an opportunity provided to us by ESG.
         `,
+        image: future,
     },
     {
-        date: "Future",
-        title: "Full Speed Ahead",
+        date: "Unknown date",
+        title: "Future",
         text: `
-            Right now we are deep in the trenches designing new items, implementing new features, developing the best possible game to our abilities.
-            We also want to start establish a following which will begin at Närcon Winter where we will be part of the indie game exhibition, an opportunity provided to us by ESG.
+            Our end goal is to make the ultimate couch party game that players all over the world try out and enjoy. 
+            We are not sure what the future holds for StoneTech Games but our dream is to form it into serious studio where we can 
+            continue developing Atganga and more games to come.
         `,
     },
 ];
@@ -85,6 +94,12 @@ const ThePlan = (props: Props) => {
                                     {entry.title}
                                 </h3>
                                 <p>{entry.text}</p>
+                                {entry.image && (
+                                    <img
+                                        className="object-contain shadow-lg shadow-holmgang-green"
+                                        src={entry.image}
+                                    />
+                                )}
                             </VerticalTimelineElement>
                         );
                     })}
