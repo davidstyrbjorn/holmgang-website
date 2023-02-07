@@ -60,77 +60,35 @@ const ThePlan = (props: Props) => {
     return (
         <div className="pt-8 w-full">
             <div className="flex flex-col justify-center p-8 pb-36">
-                <h2>The Plan</h2>
-                <div className="flex">
-                    <div className="flex flex-col justify-center flex-wrap min-w-fit w-full">
-                        <h3>What we currently have</h3>
-                        <ul>
-                            <p>
-                                - 53 working items with synergies and fun
-                                mechanics
-                            </p>
-                            <p>- Local-play with drop in functionality</p>
-                        </ul>
-                    </div>
-                    <div className="flex flex-col justify-center flex-wrap min-w-fit w-full">
-                        <h3>What we're adding</h3>
-                        <ol>
-                            <p>
-                                - More items! We're talking 100+ items in the
-                                end!
-                            </p>
-                            <p>
-                                - Player Profiles, customizable controls and
-                                stats tracking
-                            </p>
-                            <p>
-                                - Achievments, adding a feeling of progression
-                            </p>
-                            <p>
-                                - Dynamic levels, evolving levels to increase
-                                the feeling of change{" "}
-                            </p>
-                            <p>
-                                - Improve on all UI aspects, in the round & in
-                                the draft
-                            </p>
-                        </ol>
-                    </div>
-                </div>
-                <h2>
-                    Timeline{" "}
-                    <span className="text-sm">
-                        (Right now we're developing the game on our own with no
-                        backing so this timeline might change)
-                    </span>
-                    <VerticalTimeline lineColor="#F4F2DB">
-                        {timelineEntries.map((entry, idx) => {
-                            return (
-                                <VerticalTimelineElement
-                                    key={idx}
-                                    className="vertical-timeline-element--work"
-                                    contentStyle={{
-                                        background: "#28250F",
-                                        color: "#fff",
-                                    }}
-                                    contentArrowStyle={{
-                                        borderRight: "10px solid  #28250F",
-                                    }}
-                                    date={entry.date}
-                                    iconStyle={{
-                                        background: "#28250F",
-                                        color: "#fff",
-                                    }}
-                                >
-                                    <h3 className="vertical-timeline-element-title">
-                                        {entry.title}
-                                    </h3>
-                                    <p>{entry.text}</p>
-                                </VerticalTimelineElement>
-                            );
-                        })}
-                    </VerticalTimeline>
-                </h2>
+                <h2 className="text-center">Timeline </h2>
+
+                <VerticalTimeline lineColor="#F4F2DB">
+                    {timelineEntries.map((entry, idx) => {
+                        return (
+                            <VerticalTimelineElement
+                                key={idx}
+                                className="vertical-timeline-element--work"
+                                contentStyle={{
+                                    background: "#28250F",
+                                    color: "#fff",
+                                }}
+                                contentArrowStyle={{
+                                    borderRight: "10px solid  #28250F",
+                                }}
+                                date={entry.date}
+                                iconStyle={{
+                                    background: "#28250F",
+                                    color: "#fff",
+                                }}
+                            >
+                                <h3 className="vertical-timeline-element-title">
+                                    {entry.title}
+                                </h3>
+                                <p>{entry.text}</p>
+                            </VerticalTimelineElement>
+                        );
+                    })}
+                </VerticalTimeline>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ import MuteButton from "./MuteButton";
 import bg from "./assets/bg.mp3";
 import muteAtom from "./atoms/mute";
 import { useAtom } from "jotai";
+import useWindowDimensions from "./useWindowDimensions";
 
 type Props = {};
 
@@ -61,8 +62,9 @@ const Clouds: React.FC = () => {
 
 const Hero: React.FunctionComponent = (props: Props) => {
     const audio = useRef<HTMLAudioElement>();
-    // const [muted, setMuted] = useState<boolean>(true);
     const [muted, setMuted] = useAtom(muteAtom);
+
+    const windowSize = useWindowDimensions();
 
     useEffect(() => {
         if (audio.current) return;
@@ -103,7 +105,7 @@ const Hero: React.FunctionComponent = (props: Props) => {
             >
                 <ambientLight />
                 <Suspense fallback={null}>
-                    <Clouds />
+                    {windowSize.width > 800 && <Clouds />}
                 </Suspense>
             </Canvas>
         </div>
