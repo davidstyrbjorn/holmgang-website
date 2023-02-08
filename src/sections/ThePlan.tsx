@@ -30,18 +30,20 @@ const timelineEntries: TimelineEntry[] = [
         date: "November 17, 2022",
         title: "LIU GAME CONFERENCE",
         text: `
-            Placing 2nd overall at LiU game conference where we also presented at the exhibition with great feedback from all the attendees
-            we finished 'phase 1' of development. With plans to continue development and lots of new contacts made 
+            At LiU Game Awards we placed 2nd overall. We also presented at 
+            the exhibition with great feedback from all the attendees and
+            finished 'phase 1' of development with plans to continue 
+            development and with lots of new contacts made.
         `,
         image: lgc,
     },
     {
         date: "January, 2023",
-        title: "Enter ESG",
+        title: "Enter East Sweden Game",
         text: `
-            Beginning the new year we put our focus on reworking our code and UI to prepare the game
+            At the beginning of the new year we put our focus on reworking our code and UI to prepare the game
             for the massive amounts of new features we want to add. 
-            Working out from the offices at coffice provided by the ESG collective who we made contact with during 2022
+            Development moved to the offices at coffice provided to us be the ESG collective, where we plan to conitnue development. 
         `,
         image: esg,
     },
@@ -49,7 +51,7 @@ const timelineEntries: TimelineEntry[] = [
         date: "February 2023 and ahead",
         title: "Full Speed Ahead",
         text: `
-            Right now we are deep in the trenches designing new items, implementing new features, developing the best possible game to our abilities.
+            Right now we are deep in the trenches designing new items, implementing new features and developing the best possible game to our abilities.
             We also want to start establish a following which will begin at Närcon Winter where we will be part of the indie game exhibition, an opportunity provided to us by ESG.
         `,
         image: future,
@@ -58,8 +60,8 @@ const timelineEntries: TimelineEntry[] = [
         date: "Unknown date",
         title: "Future",
         text: `
-            Our end goal is to make the ultimate couch party game that players all over the world try out and enjoy. 
-            We are not sure what the future holds for StoneTech Games but our dream is to form it into serious studio where we can 
+            Our end goal is to make the ultimate couch party game that players all over the world can play and enjoy. 
+            We are not sure what the future holds for StoneTech Games but our dream is to form it into a full-time studio where we can 
             continue developing Atganga and more games to come.
         `,
     },
@@ -93,7 +95,7 @@ const ThePlan = (props: Props) => {
                                 <h3 className="vertical-timeline-element-title">
                                     {entry.title}
                                 </h3>
-                                <p>{entry.text}</p>
+                                <p className="pb-8">{entry.text}</p>
                                 {entry.image && (
                                     <img
                                         className="object-contain shadow-lg shadow-holmgang-green"
