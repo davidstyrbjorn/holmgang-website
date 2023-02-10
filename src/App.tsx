@@ -7,12 +7,13 @@ import About from "./sections/About";
 import "./index.css";
 import GameplayTrailer from "./sections/GameplayTrailer";
 import ThePlan from "./sections/ThePlan";
+import Footer from "./sections/Footer";
 
 export function App() {
     return (
         <>
             <Hero />
-            <div className="w-full place-items-center bg-holmgang-dark">
+            <div className="w-full place-items-center bg-holmgang-dark text-holmgang-beige">
                 <div className="md:container md:mx-auto mx-auto text-holmgang-beige">
                     <Trailer />
                     <Game />
@@ -21,6 +22,7 @@ export function App() {
                     <GameplayTrailer />
                     <ThePlan />
                 </div>
+                <Footer />
             </div>
         </>
     );
