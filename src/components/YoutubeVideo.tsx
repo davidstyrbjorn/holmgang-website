@@ -6,17 +6,12 @@ type Props = {
 };
 
 const YoutubeVideo = (props: Props) => {
-    const onPlayHandle = () => {
-        console.log("KRYSTA");
-    };
-
     return (
         <iframe
             className="w-full aspect-video shadow-2xl shadow-holmgang-green border-solid border-2 border-holmgang-green"
             src={props.video_id}
             title="ATGANGA Gameplay"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            onClick={onPlayHandle}
         ></iframe>
     );
 };
