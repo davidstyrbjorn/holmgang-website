@@ -4,6 +4,7 @@ import Trailer from "./sections/Trailer";
 import Game from "./sections/Game";
 import Items from "./sections/Items";
 import About from "./sections/About";
+import ItemShowcase from "./sections/ItemShowcase";
 import "./index.css";
 import GameplayTrailer from "./sections/GameplayTrailer";
 import ThePlan from "./sections/ThePlan";
@@ -18,6 +19,7 @@ export function App() {
                     <Trailer />
                     <Game />
                     <Items />
+                    <ItemShowcase />
                     <About />
                     <GameplayTrailer />
                     <ThePlan />
