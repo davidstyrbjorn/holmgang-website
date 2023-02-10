@@ -1,8 +1,8 @@
 import React from "react";
-import screenshot1 from "../assets/holmgang1.png";
-import screenshot2 from "../assets/holmgang2.png";
-import screenshot3 from "../assets/holmgang3.png";
-import screenshot4 from "../assets/holmgang4.png";
+import screenshot1 from "../assets/holmgang1.jpg";
+import screenshot2 from "../assets/holmgang2.jpg";
+import screenshot3 from "../assets/holmgang3.jpg";
+import screenshot4 from "../assets/holmgang4.jpg";
 // Using tailwindcss
 
 type Props = {};
