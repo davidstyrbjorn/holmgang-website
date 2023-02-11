@@ -25,9 +25,11 @@ module.exports = {
         '12/25':'48%'
       },
       maxWidth: {
-        'desktop':'1920px'
+        'desktop':'1920px',
+        'icon': '200px'
       },
       minWidth: {
+        50: '450px',
         '36':'36rem'
       },
       fontFamily: {

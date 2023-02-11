@@ -1,5 +1,6 @@
 import React from "react";
 import itembar from "../assets/itembar.svg";
+import ItemShowcase from "./ItemShowcase";
 // Using tailwindcss
 
 type Props = {};
@@ -8,8 +9,8 @@ const Items: React.FunctionComponent = (props: Props) => {
     return (
         <div className="pt-24 w-full h-full flex-wrap overflow-hidden">
             <div className="flex flex-col justify-center p-8">
-                <h2 className="">Items</h2>
-                <p className="">
+                <h2>Items</h2>
+                <p>
                     During draft rounds, you and your friends will be presented
                     with some gifts to change up the game. Each player gets to
                     choose one unique artifact bestowed by Hel, Loki, Thor,
@@ -20,6 +21,8 @@ const Items: React.FunctionComponent = (props: Props) => {
                     matches are ever the same in Atganga.
                 </p>
             </div>
+
+            <ItemShowcase />
             {/* <div className="absolute w-full left-0 flex justify-center bg-holmgang-dark">
                 <img src={itembar} alt="React Logo" className="w-full max-w-desktop "/>
             </div> */}

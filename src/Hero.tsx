@@ -7,6 +7,7 @@ import bg from "./assets/bg.mp3";
 import muteAtom from "./atoms/mute";
 import { useAtom } from "jotai";
 import useWindowDimensions from "./useWindowDimensions";
+import title from "./assets/atganga_logo.svg";
 
 type Props = {};
 
@@ -93,9 +94,10 @@ const Hero: React.FunctionComponent = (props: Props) => {
                     <h1 className="text-holmgang-beige text-center font-nordicathin text-md w-full pt-8">
                         StoneTech Games Presents
                     </h1>
-                    <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
+                    <img src={title} className="m-auto text-title title-text max-w-desktop" />
+                    {/* <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
                         ATGANGA
-                    </h1>
+                    </h1> */}
                 </div>
             </div>
 
