@@ -14,11 +14,11 @@ const Items: React.FunctionComponent = (props: Props) => {
                     During draft rounds, you and your friends will be presented
                     with some gifts to change up the game. Each player gets to
                     choose one unique artifact bestowed by Hel, Loki, Thor,
-                    Skadi or Odin to cater to their own fighting style. By being
-                    strategic with your choice and picking artifacts that
-                    synergize well, you can change the game in your favor. With
-                    50+ artifacts in the pool of possible artifacts, no two
-                    matches are ever the same in Atganga.
+                    Skadi, Odin or Njord to cater to their own fighting style.
+                    By being strategic with your choice and picking artifacts
+                    that synergize well, you can change the game in your favor.
+                    With 100+ artifacts in the pool of possible artifacts, no
+                    two matches are ever the same in Atganga.
                 </p>
             </div>
 
