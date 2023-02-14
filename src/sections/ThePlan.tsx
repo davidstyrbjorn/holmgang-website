@@ -6,8 +6,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import screenshot1 from "../assets/early.png";
-import esg from "../assets/esg.png";
-import lgc from "../assets/lgc.png";
+import esg from "../assets/esg.jpeg";
+import lgc from "../assets/lgc.jpeg";
 import future from "../assets/future.png";
 
 type Props = {};
