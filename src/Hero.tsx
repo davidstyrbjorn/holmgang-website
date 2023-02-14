@@ -94,7 +94,9 @@ const Hero: React.FunctionComponent = (props: Props) => {
                     <h1 className="text-holmgang-beige text-center font-nordicathin text-md w-full pt-8">
                         StoneTech Games Presents
                     </h1>
-                    <img src={title} className="m-auto text-title title-text max-w-desktop" />
+                    <img src="https://i.imgur.com/Maxr5oN.png" className="m-auto text-title title-text" alt="title"/>
+                    
+                    {/* <img src={title} className="m-auto text-title title-text max-w-desktop" /> */}
                     {/* <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
                         ATGANGA
                     </h1> */}

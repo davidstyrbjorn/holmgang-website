@@ -6,14 +6,6 @@ import Muninn from "../assets/Munnin.mp4";
 import ChargedAmmunition from "../assets/ChargedAmmo.mp4";
 import BuffetofSouls from "../assets/BuffetOfSouls.mp4";
 
-import triangle from "../assets/Timer Triangle.png";
-
-import PoisonDaggerIcon from "../assets/poison dagger.png";
-import ChillingGraceIcon from "../assets/chilling grace.png";
-import MuninnIcon from "../assets/muninn.png";
-import ChargedAmmunitionIcon from "../assets/charged ammunition.png";
-import BuffetofSoulsIcon from "../assets/buffet of souls.png";
-
 type Props = {
     isSelected: boolean;
     index: number;
@@ -27,36 +19,36 @@ const items = [
         name: "Poison Dagger",
         description:
             "Loki is the god of Trickery and an item that enforces his personality trait is Poison Dagger. Poison Dagger is an Active item a player can throw across the map. It has a low cooldown and any foes that are in its way will be poisoned. Enemies will find it hard to evade such a fast projectile and getting hit by it stings!",
-        image: PoisonDaggerIcon,
-        gif: PoisonDagger,
+        image: "https://i.imgur.com/LNA5i9c.png",
+        gif: "https://i.imgur.com/oz1JHv4.mp4",
     },
     {
         name: "Chilling Grace",
         description:
             "Skadi has given us the power to dash with the winds of winter. This passive item enhances your dash ability and lets you dash further and also apply frost to your passed through opponents! Frost is an effective way of controlling your opponents, slowing them down so they can no longer keep up with you!",
-        image: ChillingGraceIcon,
-        gif: ChillingGrace,
+        image: "https://i.imgur.com/r5zMTqe.png",
+        gif: "https://i.imgur.com/qwOqpBe.mp4",
     },
     {
         name: "Muninn",
         description:
             "Odin has given us permission to use his beloved raven Muninn in battle. Muninn is an Active item that allows us to place Muninn on the map. Then, when you need to flee or see an advantageous opportunity you can reactivate Muninn and teleport to his location. Use Muninn's powers wisely!",
-        image: MuninnIcon,
-        gif: Muninn,
+        image: "https://i.imgur.com/3oLM7xn.png",
+        gif: "https://i.imgur.com/23mT5Qc.mp4",
     },
     {
         name: "Charged Ammunition",
         description:
             "Thor lets us channel his ability to spread lighting and thunder among his enemies. With the Passive item Charged Ammunition, players can apply Static with a hit of any projectile to their opponents, creating a chain of lighting between enemies. Used with thought it can be devastating to the battlefield.",
-        image: ChargedAmmunitionIcon,
-        gif: ChargedAmmunition,
+        image: "https://i.imgur.com/xMBbakn.png",
+        gif: "https://i.imgur.com/ePG1se8.mp4",
     },
     {
         name: "Buffet of Souls",
         description:
             "Being a servant of Hel can be exhausting, but Buffet of Souls might make it seem worth it. Buffet of Souls is a passive item that lets you feast on souls when in a pinch, giving you back some health! Souls can be gathered from defeated enemies and with this item gives you great sustainability in battle!",
-        image: BuffetofSoulsIcon,
-        gif: BuffetofSouls,
+        image: "https://i.imgur.com/M5v0tN6.png",
+        gif: "https://i.imgur.com/vRrD8Zv.mp4",
     },
 ];
 
@@ -83,7 +75,7 @@ const Item = (props: Props) => {
                               }
                             : { maxWidth: 30, opacity: 0 }
                     }
-                    src={triangle}
+                    src="https://i.imgur.com/aLSbKiz.png"
                 />
             }
         </div>
@@ -116,6 +108,7 @@ const ItemShowcase = () => {
                     <h3>{items[selectedItem].name}</h3>
                     <p className="">{items[selectedItem].description}</p>
                 </div>
+
                 {/* <div className="flex-1 min-w-50 flex justify-center overflow-hidden">
                     <video
                         style={{

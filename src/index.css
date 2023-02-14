@@ -96,7 +96,7 @@ p {
 
 .sliding-bg{
     width: 400vw;
-    background: url("./assets/itembar.svg") repeat-x;
+    /* background: web("https://i.imgur.com/2XRZVuZ.png") repeat-x; */
     animation: slide 60s linear infinite;
   }
 

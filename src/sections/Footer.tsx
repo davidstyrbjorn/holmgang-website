@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             }
         >
             <div className="w-96">
-                <img src={logo}></img>
+                <img src="https://i.imgur.com/cVgBOCK.png"></img>
             </div>
             <div className="my-auto w-96">
                 <p className="text-center text-3xl pb-2">Email</p>

@@ -26,23 +26,23 @@ const Game: React.FunctionComponent = (props: Props) => {
                 <div className="flex w-1/2 pr-2 pb-4">
                     <img
                         className="object-contain shadow-lg shadow-holmgang-green"
-                        src={screenshot1}
+                        src="https://i.imgur.com/GwXXgQr.jpg"
                     />
                     <div className="m-2"></div>
                     <img
                         className="object-contain shadow-lg shadow-holmgang-green"
-                        src={screenshot2}
+                        src="https://i.imgur.com/T7wCRZU.jpg"
                     />
                 </div>
                 <div className="flex w-1/2 pr-2">
                     <img
                         className="object-contain shadow-lg shadow-holmgang-green"
-                        src={screenshot3}
+                        src="https://i.imgur.com/ZMhuDbW.jpg"
                     />
                     <div className="p-2"></div>
                     <img
                         className="object-contain shadow-lg shadow-holmgang-green"
-                        src={screenshot4}
+                        src="https://i.imgur.com/ZMhuDbW.jpg"
                     />
                 </div>
             </div>

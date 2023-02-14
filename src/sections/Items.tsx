@@ -1,5 +1,5 @@
 import React from "react";
-import itembar from "../assets/itembar.svg";
+
 import ItemShowcase from "./ItemShowcase";
 // Using tailwindcss
 
@@ -29,9 +29,7 @@ const Items: React.FunctionComponent = (props: Props) => {
 
             <div className="flex justify-between">
                 <div className="max-w-desktop overflow-hidden ">
-                    <div className=" flex justify-center bg-holmgang-dark slide-container overflow-hidden">
-                        <div className="h-96 sliding-bg overflow-hidden "></div>
-                    </div>
+                    <img className="" src="https://i.imgur.com/JvtLsbn.jpg"/>
                 </div>
             </div>
         </div>
