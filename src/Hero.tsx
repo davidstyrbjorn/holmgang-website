@@ -25,7 +25,7 @@ const Clouds: React.FC = () => {
 
     return (
         <>
-            <Cloud
+            {/* <Cloud
                 position={[-20, -6, -25]}
                 speed={0.2}
                 opacity={cloudOpacity}
@@ -56,7 +56,7 @@ const Clouds: React.FC = () => {
                 opacity={cloudOpacity}
             />
             <Cloud position={[8, -8, -5]} speed={-0.2} opacity={cloudOpacity} />
-            <Cloud position={[-8, -8, 0]} speed={0.2} opacity={cloudOpacity} />
+            <Cloud position={[-8, -8, 0]} speed={0.2} opacity={cloudOpacity} /> */}
         </>
     );
 };
@@ -103,7 +103,7 @@ const Hero: React.FunctionComponent = (props: Props) => {
                 </div>
             </div>
 
-            <Canvas
+            {/* <Canvas
                 camera={{ position: [0, 0, 6] }}
                 className="canvas custom-hero-height mt-8 -z-10"
             >
@@ -111,7 +111,7 @@ const Hero: React.FunctionComponent = (props: Props) => {
                 <Suspense fallback={null}>
                     {windowSize.width > 800 && <Clouds />}
                 </Suspense>
-            </Canvas>
+            </Canvas> */}
         </div>
     );
 };
