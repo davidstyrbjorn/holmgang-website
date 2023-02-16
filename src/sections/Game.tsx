@@ -42,7 +42,7 @@ const Game: React.FunctionComponent = (props: Props) => {
                     <div className="p-2"></div>
                     <img
                         className="object-contain shadow-lg shadow-holmgang-green"
-                        src="https://i.imgur.com/ZMhuDbW.jpg"
+                        src="https://i.imgur.com/7DLaMHS.jpg"
                     />
                 </div>
             </div>
