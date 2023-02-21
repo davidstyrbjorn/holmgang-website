@@ -60,9 +60,12 @@ const timelineEntries: TimelineEntry[] = [
         date: "Unknown date",
         title: "Future",
         text: `
-            Our end goal is to make the ultimate couch party game that players all over the world can play and enjoy. 
-            We are not sure what the future holds for StoneTech Games but our dream is to form it into a full-time studio where we can 
-            continue developing Atganga and more games to come.
+            At StoneTech Games, our ultimate goal is to create the most fun and engaging couch party game 
+            that players all over the world can't get enough of. We don't know what the future holds, 
+            but we're dreaming big - our vision is to turn StoneTech Games into a full-time studio so 
+            we can continue crafting fun, engaging experiences like Atganga and beyond. Who knows, 
+            maybe one day StoneTech Games will be known as the go-to studio for crafting fun and engaging 
+            games that bring people together. 
         `,
     },
 ];
