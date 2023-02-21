@@ -5,11 +5,6 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import screenshot1 from "../assets/early.png";
-import esg from "../assets/esg.png";
-import lgc from "../assets/lgc.png";
-import future from "../assets/future.png";
-
 type Props = {};
 
 type TimelineEntry = {
@@ -24,7 +19,7 @@ const timelineEntries: TimelineEntry[] = [
         date: "August, 2022",
         title: "Development Began...",
         text: "with the beggining of our next to last semester at LiU we all read the course TDDD23 where we decided to begin our development",
-        image: screenshot1,
+        image: "https://i.imgur.com/eUEdpmY.png",
     },
     {
         date: "November 17, 2022",
@@ -35,7 +30,7 @@ const timelineEntries: TimelineEntry[] = [
             finished 'phase 1' of development with plans to continue 
             development and with lots of new contacts made.
         `,
-        image: lgc,
+        image: "https://i.imgur.com/x7OkgFQ.jpg",
     },
     {
         date: "January, 2023",
@@ -45,7 +40,7 @@ const timelineEntries: TimelineEntry[] = [
             for the massive amounts of new features we want to add. 
             Development moved to the offices at coffice provided to us be the ESG collective, where we plan to conitnue development. 
         `,
-        image: esg,
+        image: "https://i.imgur.com/iaobo2w.jpg",
     },
     {
         date: "February 2023 and ahead",
@@ -54,10 +49,10 @@ const timelineEntries: TimelineEntry[] = [
             Right now we are deep in the trenches designing new items, implementing new features and developing the best possible game to our abilities.
             We also want to start establish a following which will begin at Närcon Winter where we will be part of the indie game exhibition, an opportunity provided to us by ESG.
         `,
-        image: future,
+        image: "https://i.imgur.com/5SVqPcA.png",
     },
     {
-        date: "Unknown date",
+        date: "",
         title: "Future",
         text: `
             At StoneTech Games, our ultimate goal is to create the most fun and engaging couch party game 

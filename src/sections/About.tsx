@@ -20,10 +20,10 @@ const About: React.FunctionComponent = (props: Props) => {
                     games together during their studies at Linköping University.
                     With a few smaller projects and gamejams under their belts
                     they are excited to create a larger, more complete
-                    experience with Holmgang. The name StoneTech Games comes
-                    from an inside joke about a certain, very unique playstyle
-                    in Holmgang. Below you can find a small presentation for
-                    each individual StoneTech Games developer.
+                    experience with Atganga. The name StoneTech Games comes from
+                    an inside joke about a certain, very unique playstyle in
+                    Atganga. Below you can find a small presentation for each
+                    individual StoneTech Games developer.
                 </p>
             </div>
             <div className="flex justify-center flex-row flex-wrap min-w-fit w-full">
