@@ -3,7 +3,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { random } from "maath";
 import MuteButton from "./MuteButton";
-import bg from "./assets/bg.mp3";
 import muteAtom from "./atoms/mute";
 import { useAtom } from "jotai";
 import useWindowDimensions from "./useWindowDimensions";
@@ -15,13 +14,13 @@ const Clouds: React.FC = () => {
     const [cloudOpacity, setCloudOpacity] = useState(0.0);
     const timeTracker = useRef(0.0);
 
-    useFrame((_state, delta, _xrFrame) => {
-        if (timeTracker.current < 0.25) {
-            timeTracker.current += delta;
-            return;
-        }
-        if (cloudOpacity < 0.2) setCloudOpacity(cloudOpacity + 0.05 * delta);
-    });
+    // useFrame((_state, delta, _xrFrame) => {
+    //     if (timeTracker.current < 0.25) {
+    //         timeTracker.current += delta;
+    //         return;
+    //     }
+    //     if (cloudOpacity < 0.2) setCloudOpacity(cloudOpacity + 0.05 * delta);
+    // });
 
     return (
         <>
@@ -63,39 +62,32 @@ const Clouds: React.FC = () => {
 
 const Hero: React.FunctionComponent = (props: Props) => {
     const audio = useRef<HTMLAudioElement>();
-    const [muted, setMuted] = useAtom(muteAtom);
+    // const [muted, setMuted] = useAtom(muteAtom);
 
-    const windowSize = useWindowDimensions();
+    // useEffect(() => {
+    //     if (!audio.current) return;
+    //     if (muted) audio.current.volume = 0;
+    //     else audio.current.volume = 0.5;
 
-    useEffect(() => {
-        if (audio.current) return;
-        audio.current = new Audio(bg);
-        audio.current.pause();
-        audio.current.autoplay = true;
-        audio.current.loop = true;
-    }, []);
-
-    useEffect(() => {
-        if (!audio.current) return;
-        if (muted) audio.current.volume = 0;
-        else audio.current.volume = 0.5;
-
-        if (!muted && audio.current.paused) {
-            audio.current.play();
-        }
-    }, [muted]);
+    //     if (!muted && audio.current.paused) {
+    //         audio.current.play();
+    //     }
+    // }, [muted]);
 
     return (
         <div className="w-screen max-w-full flex flex-col  custom-hero-height overflow-hidden">
             <div className="w-full h-screen absolute bg-holmgang-green -z-20"></div>
-            <MuteButton muted={muted} setMuted={setMuted} />
             <div className="m-auto relative w-full">
                 <div className=" w-full overflow-hidden">
                     <h1 className="text-holmgang-beige text-center font-nordicathin text-md w-full pt-8">
                         StoneTech Games Presents
                     </h1>
-                    <img src="https://i.imgur.com/Maxr5oN.png" className="m-auto text-title title-text" alt="title"/>
-                    
+                    <img
+                        src="https://i.imgur.com/Maxr5oN.png"
+                        className="m-auto text-title title-text"
+                        alt="title"
+                    />
+
                     {/* <img src={title} className="m-auto text-title title-text max-w-desktop" /> */}
                     {/* <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
                         ATGANGA
