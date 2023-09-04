@@ -76,18 +76,24 @@ const Hero: React.FunctionComponent = (props: Props) => {
 
     return (
         <div className="w-screen max-w-full flex flex-col  custom-hero-height overflow-hidden">
-            <div className="w-full h-screen absolute bg-holmgang-green -z-20"></div>
+            <div className="w-full h-screen absolute bg-holmgang-green -z-20">
+                <div className="flex justify-center overflow-hidden">
+                    <img
+                        className="hero-bg"
+                        src="https://i.imgur.com/pJuuuT0.gif"
+                    />
+                </div>
+            </div>
             <div className="m-auto relative w-full">
                 <div className=" w-full overflow-hidden">
                     <h1 className="text-holmgang-beige text-center font-nordicathin text-md w-full pt-8">
                         StoneTech Games Presents
                     </h1>
                     <img
-                        src="https://i.imgur.com/Maxr5oN.png"
-                        className="m-auto text-title title-text"
+                        src="https://i.imgur.com/77WINDG.gif"
+                        className="m-auto text-title title-text grow-anim"
                         alt="title"
                     />
-
                     {/* <img src={title} className="m-auto text-title title-text max-w-desktop" /> */}
                     {/* <h1 className="text-holmgang-beige text-center font-runytunes text-title title-text -mt-8">
                         ATGANGA
