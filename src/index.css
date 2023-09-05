@@ -48,50 +48,37 @@ p {
     font-family: "NordicaThin";
 }
 
-  .custom-hero-height{
-    height: 90vh;
-    max-height: 70vw;
+.custom-hero-height{
+  height: 80vh;
+  max-height: 70vw;
+  min-height: 60vh;
+}
+
+@keyframes reduceLetterSpacing {
+  0% {
+    display: block;
+    opacity: 0;
+    transform: scale(0.8);
   }
 
- 
-
-  @keyframes reduceLetterSpacing {
-    0% {
-      opacity: 0;
-      transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-    }
-    100% {
-        letter-spacing: 0rem;
-        transform: scale(1.1);
-    }
+  50% {
+    display: block;
+    opacity: 1;
   }
-
-  .title-text {  
-    animation: 5s ease-out 0s 1 reduceLetterSpacing;
-    transform: scale(1.1);
+  100% {
+    transform: scale(1);
   }
+}
 
-  /* @keyframes slide {
-    0% {
-      transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    2% {
-        opacity: 1;
-    }
-    98% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-      transform: translate3d(-145.5vw, 0, 0); /* The image width
-    }
-  } */
+.content-div{
+  position: relative;
+  transform: translate(0, -200px);
+}
 
+.title-text { 
+  animation: 12s ease-out 0s 1 reduceLetterSpacing forwards;
+  padding: 0 0 100px 0;
+}
 
 .slide-container{
     overflow: hidden;
@@ -101,42 +88,37 @@ p {
 .hero-bg{
   position: absolute;
   background-image: contain;
-  filter: blur(5px) brightness(0.7) saturate(1.3);
+  filter: blur(6px) brightness(0.9) saturate(1.3);
   min-width: 1920px;
   width: 100vw;
   min-height: 56vw;
-  scale:1.5;
+  scale:1.2;
   flex:1;
+  overflow: hidden;
 }
 
-/* .sliding-bg{
-    width: 400vw;
-    background: web("https://i.imgur.com/2XRZVuZ.png") repeat-x; 
-    animation: slide 60s linear infinite;
-  } */
+.left-fade{
+  z-index:1;
+  background: linear-gradient(90deg, white 0%, rgba(0,212,255,0) 100%);
+}
 
-  .left-fade{
-    z-index:1;
-    background: linear-gradient(90deg, white 0%, rgba(0,212,255,0) 100%);
+.right-fade{
+  background: linear-gradient(-90deg, white 0%, rgba(0,212,255,0) 100%);
+}
+
+/* #141308  */
+
+@media (max-width: 800px) {
+  h4 {
+    font-family: 'NordicaThin';
+    font-size: 20px;
+  }
+  p {
+      font-size: 14px;
+      font-family: "NordicaThin";
   }
 
-  .right-fade{
-    background: linear-gradient(-90deg, white 0%, rgba(0,212,255,0) 100%);
+  .custom-dev-width{
+      flex: 0 0 100%;
   }
-
-  /* #141308  */
-
-  @media (max-width: 800px) {
-    h4 {
-      font-family: 'NordicaThin';
-      font-size: 20px;
-    }
-    p {
-        font-size: 14px;
-        font-family: "NordicaThin";
-    }
-
-    .custom-dev-width{
-        flex: 0 0 100%;
-    }
-  }
+}

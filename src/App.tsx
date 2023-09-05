@@ -15,7 +15,7 @@ export function App() {
         <>
             <Hero />
             <div className="w-full place-items-center bg-holmgang-dark text-holmgang-beige">
-                <div className="md:container md:mx-auto mx-auto text-holmgang-beige">
+                <div className="md:container md:mx-auto mx-auto text-holmgang-beige content-div">
                     <Trailer />
                     <Game />
                     <Items />
