@@ -72,7 +72,7 @@ p {
 
 .content-div{
   position: relative;
-  transform: translate(0, -200px);
+  transform: translate(0, -100px);
 }
 
 .title-text { 
@@ -106,9 +106,66 @@ p {
   background: linear-gradient(-90deg, white 0%, rgba(0,212,255,0) 100%);
 }
 
+#iframe-wrap{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+#small-steamlink{
+  font-family: "Motiva Sans", Sans-serif;
+  padding:1rem;
+  border:2px solid #2d3139;
+  border-radius: 2px;
+  background-color: #282e39;
+  color:white;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+#small-steamlink h3{
+  font-family: "Motiva Sans", Sans-serif;
+  font-size: 21px;
+  padding-bottom:1rem;
+}
+
+#small-steamlink p{
+  font-family: "Motiva Sans", Sans-serif;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 5px 5px 10px;
+  color: #b8dc89;
+  border: 1px solid #232a0e;
+  background: -webkit-linear-gradient( 30deg, #395021 5%,#283e18 95%);
+  background: linear-gradient( 60deg, #395021 5%,#283e18 95%);
+  height: auto;
+}
+
+#small-steamlink p a{
+  cursor: pointer;
+  color: #d2efa9;
+  text-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.3 );
+  text-align: center;
+  line-height: 34px;
+  background: #75b022;
+  border-radius: 2px;
+  background: linear-gradient( to bottom, #6fa720 5%, #588a1b 95%);
+  background: linear-gradient( to right, #6fa720 5%, #588a1b 95%);
+  padding:8px 10px;
+  font-weight: 400;
+}
 /* #141308  */
 
 @media (max-width: 800px) {
+
+  #big-frame{
+    display: none;
+  }
+  #small-steamlink{
+    display:block;
+  }
+
   h4 {
     font-family: 'NordicaThin';
     font-size: 20px;
